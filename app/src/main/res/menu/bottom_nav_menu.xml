@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_voucher"
+        android:icon="@drawable/discount_voucher"
+        android:title="Voucher"/>
+
+    <item
+        android:id="@+id/navigation_store"
+        android:icon="@drawable/baseline_place_black_36dp"
+        android:title="Store"/>
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/baseline_home_black_36dp"
+        android:title="Home"/>
+    <item
+        android:id="@+id/navigation_history"
+        android:icon="@drawable/baseline_history_black_36dp"
+        android:title="Transaksi"/>
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/baseline_person_black_36dp"
+        android:title="Profile"/>
+
+</menu>
