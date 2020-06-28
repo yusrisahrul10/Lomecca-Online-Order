@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:paddingStart="8dp"
             android:paddingEnd="8dp"
-            android:src="@drawable/baseline_place_black_36dp" />
+            android:src="@drawable/map" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -60,7 +60,6 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingTop="8dp"
             android:paddingBottom="8dp">
 
             <ImageView
@@ -70,7 +69,7 @@
                 android:layout_marginStart="16dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/baseline_place_black_36dp" />
+                android:src="@drawable/map_pin" />
 
             <TextView
                 android:id="@+id/textView"
@@ -101,6 +100,7 @@
                 android:layout_height="20dp"
                 android:layout_marginStart="12dp"
                 android:layout_marginTop="2dp"
+                android:src="@drawable/map_pin_2"
                 app:layout_constraintStart_toEndOf="@+id/imageView7"
                 app:layout_constraintTop_toBottomOf="@+id/textView3"
                 />
@@ -115,6 +115,17 @@
                 android:textSize="10sp"
                 app:layout_constraintStart_toEndOf="@+id/imageView8"
                 app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="18dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="3dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/popup_button" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

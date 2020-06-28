@@ -19,14 +19,14 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:text="Deliver to"
-            android:textSize="18sp"
+            android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <View
             android:id="@+id/view4"
             android:layout_width="match_parent"
-            android:layout_height="3dp"
+            android:layout_height="2dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
@@ -43,7 +43,7 @@
             android:layout_marginTop="16dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/view4"
-            app:srcCompat="@drawable/baseline_place_black_36dp" />
+            app:srcCompat="@drawable/map_pin" />
 
         <TextView
             android:id="@+id/textView19"
@@ -52,7 +52,7 @@
             android:layout_marginStart="12dp"
             android:layout_marginTop="8dp"
             android:text="Rachel"
-            android:textSize="12sp"
+            android:textSize="14sp"
             app:layout_constraintStart_toEndOf="@+id/imageView13"
             app:layout_constraintTop_toTopOf="@id/view4" />
 
@@ -63,18 +63,23 @@
             android:layout_marginStart="12dp"
             android:layout_marginTop="2dp"
             android:text="Plaza Pasifik"
-            android:textSize="10sp"
+            android:textSize="12sp"
             app:layout_constraintStart_toEndOf="@+id/imageView13"
             app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
         <TextView
             android:id="@+id/textView6"
-            android:layout_width="300dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_chainStyle="packed"
             android:text="Plaza Pasifik Blok B4 No.81, Jl. Boulevard Barat, Kelapa Gading, RT.18/RW.8, Klp. Gading Bar., Jakarta Utara, Kota Jkt Utara, Daerah Khusus Ibukota Jakarta 14260 "
-            android:textSize="10sp"
+            android:textSize="12sp"
             app:layout_constraintStart_toEndOf="@+id/imageView13"
             app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
@@ -85,14 +90,14 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:text="Your Order"
-            android:textSize="18sp"
+            android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
         <View
             android:id="@+id/view5"
             android:layout_width="match_parent"
-            android:layout_height="3dp"
+            android:layout_height="2dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
@@ -118,6 +123,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="26dp"
             android:text="Nasi Goreng Biasa"
+            android:textSize="12sp"
             app:layout_constraintStart_toEndOf="@+id/imageView14"
             app:layout_constraintTop_toBottomOf="@+id/view5" />
 
@@ -127,6 +133,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="6dp"
+            android:textSize="12sp"
             android:text="Dengan sayuran dan sosis"
             app:layout_constraintStart_toEndOf="@+id/imageView14"
             app:layout_constraintTop_toBottomOf="@+id/textView22" />
@@ -137,6 +144,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="6dp"
+            android:textSize="12sp"
             android:text="Pedas | Tidak pake kerupuk."
             app:layout_constraintStart_toEndOf="@+id/imageView14"
             app:layout_constraintTop_toBottomOf="@+id/textView23" />
@@ -149,6 +157,7 @@
             android:layout_marginTop="6dp"
             android:text="35.000"
             android:textStyle="bold"
+            android:textSize="12sp"
             app:layout_constraintStart_toEndOf="@+id/imageView14"
             app:layout_constraintTop_toBottomOf="@+id/textView24" />
 
@@ -156,28 +165,29 @@
             android:id="@+id/textView26"
             android:layout_width="60dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="64dp"
             android:layout_marginTop="36dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="end"
             android:text="01"
-            android:textSize="18sp"
-            app:layout_constraintStart_toEndOf="@+id/textView23"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view5" />
 
         <TextView
             android:id="@+id/textView27"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
             android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
             android:text="Item(s)"
-            android:textSize="18sp"
-            app:layout_constraintStart_toEndOf="@+id/textView23"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView26" />
 
         <View
             android:id="@+id/view6"
             android:layout_width="match_parent"
-            android:layout_height="5dp"
+            android:layout_height="2dp"
             android:layout_marginTop="16dp"
             android:background="@android:color/darker_gray"
             app:layout_constraintEnd_toEndOf="parent"
@@ -191,7 +201,7 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="16dp"
             android:text="Promo"
-            android:textSize="18sp"
+            android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view6" />
 
@@ -254,7 +264,7 @@
         <View
             android:id="@+id/view7"
             android:layout_width="match_parent"
-            android:layout_height="5dp"
+            android:layout_height="2dp"
             android:layout_marginTop="16dp"
             android:background="@android:color/darker_gray"
             app:layout_constraintEnd_toEndOf="parent"
@@ -268,7 +278,7 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="16dp"
             android:text="Payment Method"
-            android:textSize="18sp"
+            android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view7" />
 
@@ -277,7 +287,7 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="1dp"
+            android:layout_marginTop="4dp"
             android:layout_marginEnd="16dp"
             android:background="@android:color/darker_gray"
             app:layout_constraintEnd_toEndOf="parent"
@@ -289,7 +299,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:checkedButton="@+id/first"
             android:orientation="vertical"
             app:layout_constraintStart_toStartOf="parent"
@@ -337,8 +347,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
                 app:cardElevation="6dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -355,7 +365,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"/>
+                        app:layout_constraintTop_toTopOf="parent" />
+
                     <ImageView
                         android:id="@+id/textView33"
                         android:layout_width="39dp"
@@ -375,8 +386,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
                 app:cardElevation="6dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -392,7 +404,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"/>
+                        app:layout_constraintTop_toTopOf="parent" />
+
                     <ImageView
                         android:id="@+id/textView34"
                         android:layout_width="39dp"
@@ -412,7 +425,7 @@
         <View
             android:id="@+id/view9"
             android:layout_width="match_parent"
-            android:layout_height="5dp"
+            android:layout_height="2dp"
             android:layout_marginTop="16dp"
             android:background="@android:color/darker_gray"
             app:layout_constraintEnd_toEndOf="parent"
@@ -426,7 +439,7 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="16dp"
             android:text="Payment Details"
-            android:textSize="18sp"
+            android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view9" />
 
@@ -449,7 +462,7 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="16dp"
             android:text="Price"
-            android:textSize="14sp"
+            android:textSize="12sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view10" />
 
@@ -460,6 +473,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:text="35.000"
+            android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view10" />
 
@@ -478,23 +492,22 @@
             android:id="@+id/textView39"
             android:layout_width="60dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="200dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="23dp"
             android:layout_marginEnd="16dp"
             android:text="10.000"
+            android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/textView38"
-            app:layout_constraintTop_toBottomOf="@+id/textView36" />
+            app:layout_constraintTop_toBottomOf="@+id/textView37" />
 
         <TextView
             android:id="@+id/textView40"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="23dp"
             android:layout_marginTop="16dp"
             android:text="Total"
-            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView38" />
 
@@ -503,21 +516,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginEnd="32dp"
             android:text="45.000"
-            android:textSize="18sp"
+            android:textSize="24sp"
+            android:textColor="@color/colorPrimary"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView39" />
 
-        <Button
+        <ImageView
             android:id="@+id/btnOrder"
-            android:layout_width="match_parent"
+            android:layout_width="320dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="Order Now"
-            app:layout_constraintEnd_toStartOf="@+id/textView37"
-            app:layout_constraintStart_toEndOf="@+id/textView40"
-            app:layout_constraintTop_toBottomOf="@+id/textView41" />
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView41"
+            app:srcCompat="@drawable/order_now" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

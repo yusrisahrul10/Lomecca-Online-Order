@@ -15,5 +15,11 @@ class OrderFinishActivity : AppCompatActivity() {
             startActivity(intent)
             finishAffinity()
         }
+
+        textViewOrder.setOnClickListener {
+            val intent = Intent(this, HistoryActivity::class.java)
+            startActivity(intent)
+            finishAffinity()
+        }
     }
 }

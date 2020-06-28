@@ -6,6 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import co.ceryle.segmentedbutton.SegmentedButtonGroup
 import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment : Fragment() {
@@ -30,5 +32,17 @@ class HomeFragment : Fragment() {
             val intent = Intent(activity, MenuActivity::class.java)
             startActivity(intent)
         }
+
+//        segmentedButtonGroup.setOnClickedButtonListener {
+//
+//        }
+//        segmentedButtonGroup.setPosition(2, 0)
+
+//        segmentedButtonGroup.setOnClickedButtonPosition(object : OnClickedButtonPosition() {
+//            fun onClickedButtonPosition(position: Int) {
+//                Toast.makeText(this@MainActivity, "Clicked: $position", Toast.LENGTH_SHORT).show()
+//            }
+//        })
+//        segmentedButtonGroup.setPosition(2, 0)
     }
 }

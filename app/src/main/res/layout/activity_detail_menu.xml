@@ -21,7 +21,7 @@ android:layout_height="wrap_content">
     app:layout_constraintHorizontal_bias="0.0"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent"
-    tools:srcCompat="@drawable/nasi_goreng" />
+    android:src="@drawable/nasi_goreng" />
 
 <ImageView
     android:id="@+id/imageView11"
@@ -31,7 +31,7 @@ android:layout_height="wrap_content">
     android:layout_marginTop="8dp"
     app:layout_constraintStart_toStartOf="@+id/imageView9"
     app:layout_constraintTop_toTopOf="@+id/imageView9"
-    android:src="@drawable/back" />
+    android:src="@drawable/mdi_arrow_back" />
 
 <TextView
     android:id="@+id/textView15"
@@ -87,28 +87,24 @@ android:layout_height="wrap_content">
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/view3" />
 
-<com.google.android.material.textfield.TextInputLayout
-    android:id="@+id/shipper_layout"
-    android:layout_width="match_parent"
-    android:layout_height="150dp"
-    android:layout_marginStart="24dp"
-    android:layout_marginTop="8dp"
-    android:layout_marginEnd="24dp"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/textView17">
 
     <EditText
         android:id="@+id/shipper_field"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/circle"
+        android:hint="Tidak pake kerupuk"
         android:inputType="textMultiLine"
         android:overScrollMode="always"
         android:padding="15dp"
-        android:hint="Tidak pake kerupuk"
         android:scrollbarStyle="insideInset"
-        android:scrollbars="vertical" />
-</com.google.android.material.textfield.TextInputLayout>
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
 <LinearLayout
     android:id="@+id/linearLayout2"
@@ -119,14 +115,14 @@ android:layout_height="wrap_content">
     android:gravity="center"
     android:orientation="horizontal"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/shipper_layout">
+    app:layout_constraintTop_toBottomOf="@+id/shipper_field">
 
-    <Button
+    <ImageView
         android:id="@+id/button8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:layout_marginEnd="21dp"
-        android:text="-" />
+        android:src="@drawable/minus_btn" />
 
     <TextView
         android:id="@+id/textView20"
@@ -135,22 +131,24 @@ android:layout_height="wrap_content">
         android:layout_marginEnd="21dp"
         android:text="1" />
 
-    <Button
+    <ImageView
         android:id="@+id/button10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="+" />
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/plus_btn" />
 </LinearLayout>
 
-<Button
-    android:id="@+id/btnAddToCart"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="34dp"
-    android:text="Add To Cart"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+    <ImageView
+        android:id="@+id/btnAddToCart"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/add_to_cart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
